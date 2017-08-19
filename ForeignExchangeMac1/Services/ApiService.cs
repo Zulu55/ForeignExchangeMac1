@@ -14,7 +14,8 @@
             try
             {
                 var client = new HttpClient();
-                client.BaseAddress = new Uri("http://apiexchangerates.azurewebsites.net");
+                client.BaseAddress = new 
+                    Uri("http://apiexchangerates.azurewebsites.net");
                 var controller = "/api/Rates";
                 var response = await client.GetAsync(controller);
                 var result = await response.Content.ReadAsStringAsync();

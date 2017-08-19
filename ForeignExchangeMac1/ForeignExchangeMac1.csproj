@@ -53,7 +53,6 @@
     <Compile Include="Views\ForeignExchangePage.xaml.cs">
       <DependentUpon>ForeignExchangePage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Controls\BindablePicker.cs" />
     <Compile Include="Models\Rate.cs" />
     <Compile Include="Services\ApiService.cs" />
     <Compile Include="Models\Response.cs" />
@@ -94,7 +93,6 @@
     <Folder Include="ViewModels\" />
     <Folder Include="Infrastructure\" />
     <Folder Include="Views\" />
-    <Folder Include="Controls\" />
     <Folder Include="Models\" />
     <Folder Include="Services\" />
   </ItemGroup>
