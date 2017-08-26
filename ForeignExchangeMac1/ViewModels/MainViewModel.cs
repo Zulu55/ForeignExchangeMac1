@@ -1,6 +1,5 @@
 ﻿namespace ForeignExchangeMac1.ViewModels
 {
-    using System;
     using System.Collections.Generic;
     using System.Collections.ObjectModel;
     using System.ComponentModel;
@@ -176,6 +175,15 @@
         {
             IsRunning = true;
             IsEnabled = false;
+
+            var connection = await apiService.CheckConnection();
+            if (!connection.IsSuccess)
+            {
+				IsRunning = false;
+				IsEnabled = false;
+				Result = connection.Message;
+				return;
+			}
 
             var response = await apiService.GetRates();
 

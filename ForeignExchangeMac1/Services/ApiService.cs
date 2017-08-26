@@ -6,9 +6,38 @@
     using System.Threading.Tasks;
     using Models;
     using Newtonsoft.Json;
+    using Plugin.Connectivity;
 
     public class ApiService
     {
+        public async Task<Response> CheckConnection()
+        {
+            if (!CrossConnectivity.Current.IsConnected)
+            {
+                return new Response
+                {
+                    IsSuccess = false,
+                    Message = "Check your internet settings.",
+                };
+            }
+
+            var reachable = await CrossConnectivity.Current.IsReachable(
+                "google.com");
+            if (!reachable)
+            {
+				return new Response
+				{
+					IsSuccess = false,
+					Message = "Check your internet connection.",
+				};
+			}
+
+            return new Response
+            {
+                IsSuccess = true,
+            };
+        }
+
         public async Task<Response> GetRates()
         {
             try
