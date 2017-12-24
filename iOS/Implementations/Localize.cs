@@ -1,8 +1,8 @@
 ﻿using Xamarin.Forms;
 
-[assembly: Dependency(typeof(ForeignExchangeMac1.iOS.Implementations.Localize))]
+[assembly: Dependency(typeof(ForeignExchange2.iOS.Implementations.Localize))]
 
-namespace ForeignExchangeMac1.iOS.Implementations
+namespace ForeignExchange2.iOS.Implementations
 {
 	using System.Globalization;
 	using System.Threading;

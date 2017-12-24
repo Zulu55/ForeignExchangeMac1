@@ -1,8 +1,8 @@
 ﻿using Xamarin.Forms;
 
-[assembly: Dependency(typeof(ForeignExchangeMac1.iOS.Implementations.Config))]
+[assembly: Dependency(typeof(ForeignExchange2.iOS.Implementations.Config))]
 
-namespace ForeignExchangeMac1.iOS.Implementations
+namespace ForeignExchange2.iOS.Implementations
 {
     using System;
 	using Interfaces;
@@ -10,8 +10,8 @@ namespace ForeignExchangeMac1.iOS.Implementations
 
 	public class Config : IConfig
 	{
-		string directoryDB;
-		ISQLitePlatform platform;
+		private string directoryDB;
+		private ISQLitePlatform platform;
 
 		public string DirectoryDB
 		{
@@ -37,8 +37,7 @@ namespace ForeignExchangeMac1.iOS.Implementations
 			{
 				if (platform == null)
 				{
-					platform = new SQLite.Net.Platform.XamarinIOS
-                                         .SQLitePlatformIOS();
+					platform = new SQLite.Net.Platform.XamarinIOS.SQLitePlatformIOS();
 				}
 
 				return platform;

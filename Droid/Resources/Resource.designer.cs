@@ -9,9 +9,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Android.Runtime.ResourceDesignerAttribute("ForeignExchangeMac1.Droid.Resource", IsApplication=true)]
+[assembly: global::Android.Runtime.ResourceDesignerAttribute("ForeignExchange2.Droid.Resource", IsApplication=true)]
 
-namespace ForeignExchangeMac1.Droid
+namespace ForeignExchange2.Droid
 {
 	
 	
@@ -26,7 +26,9 @@ namespace ForeignExchangeMac1.Droid
 		
 		public static void UpdateIdValues()
 		{
-			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::ForeignExchangeMac1.Droid.Resource.Attribute.actionBarSize;
+			global::SQLite.Net.Platform.XamarinAndroid.Resource.String.ApplicationName = global::ForeignExchange2.Droid.Resource.String.ApplicationName;
+			global::SQLite.Net.Platform.XamarinAndroid.Resource.String.Hello = global::ForeignExchange2.Droid.Resource.String.Hello;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::ForeignExchange2.Droid.Resource.Attribute.actionBarSize;
 		}
 		
 		public partial class Animation
@@ -1943,7 +1945,7 @@ namespace ForeignExchangeMac1.Droid
 			public const int abc_textfield_search_material = 2130837578;
 			
 			// aapt resource value: 0x7f02004b
-			public const int change = 2130837579;
+			public const int changemoney = 2130837579;
 			
 			// aapt resource value: 0x7f02004c
 			public const int design_fab_background = 2130837580;
@@ -2939,6 +2941,12 @@ namespace ForeignExchangeMac1.Droid
 		
 		public partial class String
 		{
+			
+			// aapt resource value: 0x7f080027
+			public const int ApplicationName = 2131230759;
+			
+			// aapt resource value: 0x7f080026
+			public const int Hello = 2131230758;
 			
 			// aapt resource value: 0x7f08000f
 			public const int abc_action_bar_home_description = 2131230735;

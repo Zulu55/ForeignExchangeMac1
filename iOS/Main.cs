@@ -5,7 +5,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
-namespace ForeignExchangeMac1.iOS
+namespace ForeignExchange2.iOS
 {
     public class Application
     {
